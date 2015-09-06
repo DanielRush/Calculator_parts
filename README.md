@@ -1,2 +1,8 @@
 # Calculator_parts
 This is an open source calculator written on borland pascal for Dos. Good for students of many schools especially done for school 146. In alpha state.
+We have some sponsores in development: DanielRush and our main program:https://github.com/DanielRush/SyPeRmultiwork;
+This sources are incompatible with free pascal and abc pascal because of the diffrent environment of the development;
+We are very open to any help and feedback. Our main plan is to create a cocoa app for os x written on pascal which includes all these functions. But for now our aim is to create a perfect app for dos. It something like Norton commander but with some better options including advanced text editor, clock and timer. Moreover this environment is compatible with all dos apps so you can start any dos app inside this environment. It is something like window manager for dos.
+In OSX we realise the same thing. It is an environment to start up dos apps. You may thing that we want to create a new dosbox. Yes probably but we want to create much more stable program. We don't use dosbox sources for this; We write it from the very beginning to the end. A cocoa app will be written on c but we want to test pascal option first.
+We will make a good changelog. Our system is based on revision principy. The first revision is r100. Each time we will move this number up for 10. IF the changes are not minor we can add a thousand prefix. It means that first number of revision is the number of the version. For example, 100 - 0.1; 101-0.101 etc. Just we use this formular: version=Rev_Number/1000;
+Thanks for your attension! We hope that our project won't dye)))
