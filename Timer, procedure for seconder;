@@ -1,5 +1,5 @@
 {Dear Kosta and Daniel we need to debug and test the following code}
-Already added into github repository;
+{Already added into github repository}
 Program Timer;
 Uses
 crt;
