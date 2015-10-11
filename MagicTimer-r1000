@@ -1,0 +1,75 @@
+Program Seconder;
+Uses
+crt;
+var
+s, m, h, s1, m1, h1, s2, m2, h2, el: integer;
+l: char;
+a, b, c, k, r: string;
+const
+e=':';
+Label
+LabelSeconder;
+begin
+	LabelSeconder:
+s:=0;
+m:=0;
+h:=0;
+l:='a';
+s1:=0;
+m1:=0;
+h1:=0;
+s2:=0;
+m2:=0;
+h2:=0;
+k:='Hello, this seconder is made by Daniel Inc.';
+writeln(k);
+r:='Daniel Inc. 2015 All rights reserved';
+writeln(r);
+a:='s stops the seconder, double-tap d writes/overwrites 1 lap, e - 2 lap';
+writeln(a);
+repeat
+if keypressed then
+begin
+ l:=readkey;
+  if l='d' then
+   begin
+   b:='1 lap is ';
+   s1:=s;
+   m1:=m;
+   h1:=h
+   end
+   else
+  if l='e' then
+   begin
+   c:='2 lap is ';
+   s2:=s;
+   m2:=m;
+   h2:=h;
+   end
+end
+else
+begin
+s:=s+1;
+delay(1000);
+clrscr;
+if s=59 then
+begin
+s:=0;
+m:=m+1;
+end;
+writeln(k);
+writeln(r);
+writeln(a);
+writeln(h,e,m,e,s);
+end
+until (l='s');
+writeln(b,h1,e,m1,e,s1);
+writeln(c,h2,e,m2,e,s2);
+writeln('Write 1 if you want to exit, 2 to continue');
+read(el);
+if el=1 then
+exit
+else
+if el=2 then
+goto LabelSeconder;
+end.
