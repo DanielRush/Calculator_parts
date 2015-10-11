@@ -1,5 +1,5 @@
 # Calculator_parts
-This is an open source calculator written on borland pascal for Dos. Good for students of many schools especially done for school 146. In alpha state.
+This is an open source calculator written on ABC Pascal. Good for students of many schools especially done for school 146. In alpha state.
 We have some sponsores in development: DanielRush and our main program:https://github.com/DanielRush/SyPeRmultiwork;
 This sources are incompatible with free pascal and abc pascal because of the diffrent environment of the development;
 We are very open to any help and feedback. Our main plan is to create a cocoa app for os x written on pascal which includes all these functions. But for now our aim is to create a perfect app for dos. It something like Norton commander but with some better options including advanced text editor, clock and timer. Moreover this environment is compatible with all dos apps so you can start any dos app inside this environment. It is something like window manager for dos.
