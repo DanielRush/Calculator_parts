@@ -1,0 +1,50 @@
+program Timer;
+uses
+ crt;
+var
+ n, el:integer;
+ a, b: char;
+ p, c, d: string;
+Label
+LabelTimer1;
+begin
+ LabelTimer1:
+clrscr;
+c:='This timer is made by Daniel Inc. This app is part of SyPeRmultiwork branch';
+d:='Daniel Inc. 2015 All rights reserved';
+p:='To stop write s, to pause - p, to resume - r';
+writeln(c);
+writeln(d);
+writeln(p);
+writeln('write seconds');
+read(n);
+repeat
+if keypressed then
+begin
+ a:=readkey;
+ if a='s' then
+ begin
+ exit;
+ end;
+ if a='p' then
+ begin
+ repeat
+ b:=readkey;
+ until b='r';
+ b:='a';
+ end;
+end
+else
+begin
+writeln(n);
+n:=n-1;
+Delay(1000);
+end;
+until n=0;
+writeln('If you want to continue, write 1, if no, write 2');
+read(el);
+if el=1 then
+goto LabelTimer1;
+if el=2 then
+exit;
+end.
